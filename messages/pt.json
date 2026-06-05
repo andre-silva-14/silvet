@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Silvet | Cardiologia Veterinária",
+    "description": "Cuide do coração do seu melhor amigo com os nossos especialistas."
+  },
+  "Header": {
+    "bookAppointment": "Marcar Consulta"
+  },
+  "Hero": {
+    "title": "Silvet Cardiologia Veterinária",
+    "subtitle": "Cuide do coração do seu melhor amigo com os nossos especialistas.",
+    "cta": "Agendar uma Consulta"
+  },
+  "Services": {
+    "title": "Nossos Serviços Cardíacos",
+    "echocardiography": {
+      "title": "Ecocardiografia",
+      "description": "Ecografia cardíaca detalhada para cães e gatos."
+    },
+    "cardiacScreening": {
+      "title": "Rastreio Cardíaco",
+      "description": "Avaliações cardíacas pré-anestésicas e para raças predispostas."
+    },
+    "heartDiseaseManagement": {
+      "title": "Gestão de Doenças Cardíacas",
+      "description": "Planos de tratamento e acompanhamento de condições cardíacas crónicas."
+    },
+    "emergencyCardiology": {
+      "title": "Cardiologia de Urgência",
+      "description": "Avaliação urgente e tratamento de eventos cardíacos agudos."
+    }
+  },
+  "General": {
+    "title": "Consultas Gerais",
+    "description": "Para além dos cuidados especializados em cardiologia, também oferecemos consultas veterinárias gerais."
+  },
+  "Footer": {
+    "tagline": "Cardiologia veterinária especializada — cuidados ao mais alto nível.",
+    "contact": {
+      "title": "Contacto",
+      "address": "Rua Serdeczna 12, 00-001 Varsóvia",
+      "phone": "+48 22 123 45 67",
+      "email": "contacto@silvet.pl"
+    },
+    "hours": {
+      "title": "Horário de Funcionamento",
+      "weekdays": {
+        "label": "Seg–Sex",
+        "value": "9:00 – 19:00"
+      },
+      "saturday": {
+        "label": "Sábado",
+        "value": "10:00 – 15:00"
+      },
+      "sunday": {
+        "label": "Domingo",
+        "value": "Fechado"
+      }
+    },
+    "copyright": "© {year} Silvet — Cardiologia Veterinária. Todos os direitos reservados."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Silvet | Veterinary Cardiology",
+    "description": "Take care of your best friend's heart with our specialists."
+  },
+  "Header": {
+    "bookAppointment": "Book Appointment"
+  },
+  "Hero": {
+    "title": "Silvet Veterinary Cardiology",
+    "subtitle": "Take care of your best friend's heart with our specialists.",
+    "cta": "Schedule an Appointment"
+  },
+  "Services": {
+    "title": "Our Cardiac Services",
+    "echocardiography": {
+      "title": "Echocardiography",
+      "description": "Detailed cardiac ultrasound imaging for dogs and cats."
+    },
+    "cardiacScreening": {
+      "title": "Cardiac Screening",
+      "description": "Pre-anesthetic heart evaluations and screening for predisposed breeds."
+    },
+    "heartDiseaseManagement": {
+      "title": "Heart Disease Management",
+      "description": "Ongoing treatment plans and care for chronic cardiac conditions."
+    },
+    "emergencyCardiology": {
+      "title": "Emergency Cardiology",
+      "description": "Urgent assessment and treatment for acute cardiac events."
+    }
+  },
+  "General": {
+    "title": "General Consultations",
+    "description": "Alongside our specialist cardiology care, we also offer standard veterinary consultations."
+  },
+  "Footer": {
+    "tagline": "Specialist veterinary cardiology — care at the highest level.",
+    "contact": {
+      "title": "Contact",
+      "address": "12 Serdeczna St, 00-001 Warsaw",
+      "phone": "+48 22 123 45 67",
+      "email": "contact@silvet.pl"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "weekdays": {
+        "label": "Mon–Fri",
+        "value": "9:00 – 19:00"
+      },
+      "saturday": {
+        "label": "Saturday",
+        "value": "10:00 – 15:00"
+      },
+      "sunday": {
+        "label": "Sunday",
+        "value": "Closed"
+      }
+    },
+    "copyright": "© {year} Silvet — Veterinary Cardiology. All rights reserved."
+  }
+}

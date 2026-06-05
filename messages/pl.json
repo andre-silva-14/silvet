@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Silvet | Kardiologia Weterynaryjna",
+    "description": "Zadbaj o serce swojego przyjaciela pod okiem specjalistów."
+  },
+  "Header": {
+    "bookAppointment": "Umów wizytę"
+  },
+  "Hero": {
+    "title": "Silvet Kardiologia Weterynaryjna",
+    "subtitle": "Zadbaj o serce swojego przyjaciela pod okiem specjalistów.",
+    "cta": "Umów wizytę"
+  },
+  "Services": {
+    "title": "Nasze usługi kardiologiczne",
+    "echocardiography": {
+      "title": "Echokardiografia",
+      "description": "Szczegółowe badanie ultrasonograficzne mięśnia sercowego dla psów i kotów."
+    },
+    "cardiacScreening": {
+      "title": "Badania przesiewowe serca",
+      "description": "Ocena kardiologiczna przed znieczuleniem oraz dla ras predysponowanych do chorób serca."
+    },
+    "heartDiseaseManagement": {
+      "title": "Zarządzanie chorobami serca",
+      "description": "Plany leczenia i długoterminowa opieka nad zwierzętami z przewlekłymi schorzeniami kardiologicznymi."
+    },
+    "emergencyCardiology": {
+      "title": "Kardiologia w nagłych wypadkach",
+      "description": "Szybka ocena i stabilizacja w ostrych stanach kardiologicznych."
+    }
+  },
+  "General": {
+    "title": "Konsultacje ogólne",
+    "description": "Oprócz specjalistycznej opieki kardiologicznej, oferujemy również podstawowe wizyty weterynaryjne w naszej klinice."
+  },
+  "Footer": {
+    "tagline": "Specjalistyczna kardiologia weterynaryjna — opieka na najwyższym poziomie.",
+    "contact": {
+      "title": "Kontakt",
+      "address": "ul. Serdeczna 12, 00-001 Warszawa",
+      "phone": "+48 22 123 45 67",
+      "email": "kontakt@silvet.pl"
+    },
+    "hours": {
+      "title": "Godziny otwarcia",
+      "weekdays": {
+        "label": "Pon–Pt",
+        "value": "9:00 – 19:00"
+      },
+      "saturday": {
+        "label": "Sobota",
+        "value": "10:00 – 15:00"
+      },
+      "sunday": {
+        "label": "Niedziela",
+        "value": "Nieczynne"
+      }
+    },
+    "copyright": "© {year} Silvet — Kardiologia Weterynaryjna. Wszelkie prawa zastrzeżone."
+  }
+}

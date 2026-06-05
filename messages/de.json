@@ -1,0 +1,62 @@
+{
+  "Metadata": {
+    "title": "Silvet | Veterinärkardiologie",
+    "description": "Kümmern Sie sich um das Herz Ihres besten Freundes."
+  },
+  "Header": {
+    "bookAppointment": "Termin vereinbaren"
+  },
+  "Hero": {
+    "title": "Silvet Veterinärkardiologie",
+    "subtitle": "Kümmern Sie sich um das Herz Ihres besten Freundes.",
+    "cta": "Einen Termin vereinbaren"
+  },
+  "Services": {
+    "title": "Unsere Leistungen",
+    "echocardiography": {
+      "title": "Echokardiographie",
+      "description": "Detaillierte Herz-Ultraschalluntersuchungen für Hunde und Katzen."
+    },
+    "cardiacScreening": {
+      "title": "Herz-Screening",
+      "description": "Voruntersuchungen vor Narkosen und rassespezifische Herz-Checks."
+    },
+    "heartDiseaseManagement": {
+      "title": "Behandlung von Herzerkrankungen",
+      "description": "Langfristige Therapiepläne für chronische Herzbeschwerden."
+    },
+    "emergencyCardiology": {
+      "title": "Notfallkardiologie",
+      "description": "Schnelle Beurteilung und Behandlung bei akuten Herznotfällen."
+    }
+  },
+  "General": {
+    "title": "Allgemeine Sprechstunde",
+    "description": "Zusätzlich zur Kardiologie bieten wir auch allgemeine tiermedizinische Beratungen an."
+  },
+  "Footer": {
+    "tagline": "Spezialisierte Tierkardiologie — Betreuung auf höchstem Niveau.",
+    "contact": {
+      "title": "Kontakt",
+      "address": "Serdeczna Str. 12, 00-001 Warschau",
+      "phone": "+48 22 123 45 67",
+      "email": "kontakt@silvet.pl"
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "weekdays": {
+        "label": "Mo–Fr",
+        "value": "9:00 – 19:00"
+      },
+      "saturday": {
+        "label": "Samstag",
+        "value": "10:00 – 15:00"
+      },
+      "sunday": {
+        "label": "Sonntag",
+        "value": "Geschlossen"
+      }
+    },
+    "copyright": "© {year} Silvet — Tierkardiologie. Alle Rechte vorbehalten."
+  }
+}
