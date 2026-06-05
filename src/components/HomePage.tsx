@@ -2,6 +2,8 @@ import * as React from "react";
 import { Activity, Heart, ShieldAlert, Stethoscope, ArrowRight } from "lucide-react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
+import { HeartScene } from "./HeartScene";
+import { HeartPawIllustration } from "./HeartPawIllustration";
 
 export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
   return (
@@ -37,9 +39,17 @@ export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
       </header>
 
       <main className="flex-1">
-        <section className="relative min-h-[90vh] flex flex-col justify-center px-8 lg:px-24">
+        <section className="relative min-h-screen flex flex-col justify-center px-8 lg:px-24">
           <div className="absolute inset-0 bg-gradient-to-b from-[#F5F3F0] via-[#FAF9F7] to-[#F5F3F0] dark:from-[#020617] dark:via-[#0f172a] dark:to-[#020617] z-0"></div>
           <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-300/25 dark:bg-blue-900/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+          <div className="absolute inset-0 lg:inset-auto lg:right-0 lg:top-0 w-full lg:w-[60%] h-full lg:h-screen z-0 lg:z-[1] pointer-events-none overflow-hidden">
+            <div className="w-full h-full opacity-[0.28] lg:opacity-100">
+              <React.Suspense fallback={null}>
+                <HeartScene />
+              </React.Suspense>
+            </div>
+          </div>
 
           <div className="relative z-10 max-w-4xl">
             <h1 className="text-5xl lg:text-7xl text-[#1C1C1E] dark:text-slate-100 font-serif tracking-wide leading-tight mb-8">
@@ -93,7 +103,8 @@ export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
               </div>
 
               <div className="hidden lg:flex lg:col-span-6 bg-white dark:bg-[#020617] items-center justify-center overflow-hidden relative">
-                <div className="absolute w-48 h-48 bg-indigo-300/20 dark:bg-indigo-900/20 rounded-full blur-[80px]"></div>
+                <div className="absolute w-60 h-60 bg-blue-300/15 dark:bg-blue-900/15 rounded-full blur-[100px]"></div>
+                <HeartPawIllustration />
               </div>
 
               <div className="hidden lg:flex lg:col-span-6 bg-white dark:bg-[#020617] items-center justify-center overflow-hidden relative">
