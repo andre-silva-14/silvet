@@ -4,8 +4,9 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 import { HeartScene } from "./HeartScene";
 import { HeartPawIllustration } from "./HeartPawIllustration";
+import { MobileMenuClient } from "./MobileMenuClient";
 
-export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
+export function HomePage({ tHero, tServices, tGeneral, tFooter, locale, themeDarkLabel, themeLightLabel }: any) {
   return (
     <div className="min-h-screen bg-[#FAF9F7] dark:bg-[#020617] text-[#6B7280] dark:text-slate-300 font-sans">
       <header className="absolute top-0 w-full px-8 py-6 flex items-center justify-between z-50">
@@ -24,17 +25,25 @@ export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
             SILVET
           </span>
         </div>
-        <div className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           <React.Suspense fallback={<span className="text-xs font-light tracking-widest uppercase text-[#6B7280] dark:text-slate-300">{locale}</span>}>
             <LanguageSwitcher locale={locale} />
           </React.Suspense>
           <ThemeToggle />
           <a
-            href={`/${locale}/book`}
+            href={`/${locale}/contact`}
             className="border border-[#D1D0CC] dark:border-slate-500/50 hover:bg-[#1C1C1E] hover:text-white dark:hover:bg-slate-100 dark:hover:text-[#020617] text-[#1C1C1E] dark:text-slate-100 px-6 py-2 text-xs font-light tracking-[0.1em] uppercase transition-all duration-500"
           >
             {tGeneral("title")}
           </a>
+        </div>
+        <div className="md:hidden">
+          <MobileMenuClient
+            locale={locale}
+            contactLabel={tGeneral("title")}
+            themeDarkLabel={themeDarkLabel}
+            themeLightLabel={themeLightLabel}
+          />
         </div>
       </header>
 
@@ -44,7 +53,7 @@ export function HomePage({ tHero, tServices, tGeneral, tFooter, locale }: any) {
           <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-blue-300/25 dark:bg-blue-900/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
           <div className="absolute inset-0 lg:inset-auto lg:right-0 lg:top-0 w-full lg:w-[60%] h-full lg:h-screen z-0 lg:z-[1] pointer-events-none overflow-hidden">
-            <div className="w-full h-full opacity-[0.28] lg:opacity-100">
+            <div className="w-full h-full opacity-[0.52] lg:opacity-100">
               <React.Suspense fallback={null}>
                 <HeartScene />
               </React.Suspense>

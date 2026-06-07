@@ -12,6 +12,17 @@ export default async function Page({
   const tServices = await getTranslations("Services");
   const tGeneral = await getTranslations("General");
   const tFooter = await getTranslations("Footer");
+  const tHeader = await getTranslations("Header");
 
-  return <HomePage tHero={tHero} tServices={tServices} tGeneral={tGeneral} tFooter={tFooter} locale={locale} />;
+  return (
+    <HomePage
+      tHero={tHero}
+      tServices={tServices}
+      tGeneral={tGeneral}
+      tFooter={tFooter}
+      locale={locale}
+      themeDarkLabel={tHeader("dark")}
+      themeLightLabel={tHeader("light")}
+    />
+  );
 }

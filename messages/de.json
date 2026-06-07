@@ -4,7 +4,9 @@
     "description": "Kümmern Sie sich um das Herz Ihres besten Freundes."
   },
   "Header": {
-    "bookAppointment": "Termin vereinbaren"
+    "bookAppointment": "Termin vereinbaren",
+    "dark": "dunkel",
+    "light": "hell"
   },
   "Hero": {
     "title": "Silvet Veterinärkardiologie",
@@ -31,7 +33,7 @@
     }
   },
   "General": {
-    "title": "Allgemeine Sprechstunde",
+    "title": "Kontakt",
     "description": "Zusätzlich zur Kardiologie bieten wir auch allgemeine tiermedizinische Beratungen an."
   },
   "Footer": {
@@ -58,5 +60,10 @@
       }
     },
     "copyright": "© {year} Silvet — Tierkardiologie. Alle Rechte vorbehalten."
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "cta": "Zurück zur Startseite"
   }
 }

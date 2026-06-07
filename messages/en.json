@@ -4,7 +4,9 @@
     "description": "Take care of your best friend's heart with our specialists."
   },
   "Header": {
-    "bookAppointment": "Book Appointment"
+    "bookAppointment": "Book Appointment",
+    "dark": "dark",
+    "light": "light"
   },
   "Hero": {
     "title": "Silvet Veterinary Cardiology",
@@ -31,7 +33,7 @@
     }
   },
   "General": {
-    "title": "General Consultations",
+    "title": "Contact",
     "description": "Alongside our specialist cardiology care, we also offer standard veterinary consultations."
   },
   "Footer": {
@@ -58,5 +60,10 @@
       }
     },
     "copyright": "© {year} Silvet — Veterinary Cardiology. All rights reserved."
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "cta": "Return to Home"
   }
 }

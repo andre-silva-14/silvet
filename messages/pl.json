@@ -4,7 +4,9 @@
     "description": "Zadbaj o serce swojego przyjaciela pod okiem specjalistów."
   },
   "Header": {
-    "bookAppointment": "Umów wizytę"
+    "bookAppointment": "Umów wizytę",
+    "dark": "ciemny",
+    "light": "jasny"
   },
   "Hero": {
     "title": "Silvet Kardiologia Weterynaryjna",
@@ -31,7 +33,7 @@
     }
   },
   "General": {
-    "title": "Konsultacje ogólne",
+    "title": "Kontakt",
     "description": "Oprócz specjalistycznej opieki kardiologicznej, oferujemy również podstawowe wizyty weterynaryjne w naszej klinice."
   },
   "Footer": {
@@ -58,5 +60,10 @@
       }
     },
     "copyright": "© {year} Silvet — Kardiologia Weterynaryjna. Wszelkie prawa zastrzeżone."
+  },
+  "NotFound": {
+    "title": "Strona nie znaleziona",
+    "description": "Przepraszamy, strona której szukasz nie istnieje lub została przeniesiona.",
+    "cta": "Wróć do strony głównej"
   }
 }

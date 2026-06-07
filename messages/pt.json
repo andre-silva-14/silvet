@@ -4,7 +4,9 @@
     "description": "Cuide do coração do seu melhor amigo com os nossos especialistas."
   },
   "Header": {
-    "bookAppointment": "Marcar Consulta"
+    "bookAppointment": "Marcar Consulta",
+    "dark": "escuro",
+    "light": "claro"
   },
   "Hero": {
     "title": "Silvet Cardiologia Veterinária",
@@ -31,7 +33,7 @@
     }
   },
   "General": {
-    "title": "Consultas Gerais",
+    "title": "Contacto",
     "description": "Para além dos cuidados especializados em cardiologia, também oferecemos consultas veterinárias gerais."
   },
   "Footer": {
@@ -58,5 +60,10 @@
       }
     },
     "copyright": "© {year} Silvet — Cardiologia Veterinária. Todos os direitos reservados."
+  },
+  "NotFound": {
+    "title": "Página Não Encontrada",
+    "description": "Desculpe, a página que procura não existe ou foi movida.",
+    "cta": "Voltar à Página Inicial"
   }
 }
