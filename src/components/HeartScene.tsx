@@ -58,6 +58,8 @@ function HeartModel() {
   const { scene } = useGLTF("/models/heart.glb");
   const groupRef = React.useRef<THREE.Group>(null);
   const baseScaleRef = React.useRef(1);
+  const entranceRef = React.useRef(0);
+  const materialsRef = React.useRef<THREE.LineBasicMaterial[]>([]);
 
   React.useEffect(() => {
     if (!groupRef.current) return;
@@ -85,11 +87,38 @@ function HeartModel() {
 
     group.scale.copy(edges.scale);
     baseScaleRef.current = edges.scale.x;
+
+    group.scale.setScalar(baseScaleRef.current * 0.6);
+
+    materialsRef.current = [];
+    group.traverse((child) => {
+      if ((child as THREE.LineSegments).isLineSegments) {
+        const mat = (child as THREE.LineSegments).material as THREE.LineBasicMaterial;
+        mat.opacity = 0;
+        materialsRef.current.push(mat);
+      }
+    });
+
+    entranceRef.current = 0;
   }, [scene]);
 
   useFrame((state, delta) => {
     if (!groupRef.current) return;
     const t = state.clock.elapsedTime;
+
+    if (entranceRef.current < 1) {
+      entranceRef.current = Math.min(1, entranceRef.current + delta * 2);
+      const e = entranceRef.current;
+      const ease = e * e * (3 - 2 * e);
+
+      const s = baseScaleRef.current * (0.6 + 0.4 * ease);
+      groupRef.current.scale.setScalar(s);
+
+      for (const mat of materialsRef.current) {
+        mat.opacity = 0.25 * ease;
+      }
+    }
+
     groupRef.current.rotation.y += delta * 0.08;
     groupRef.current.rotation.x = Math.sin(t * 0.2) * 0.2;
     groupRef.current.rotation.z = Math.cos(t * 0.15) * 0.15;
@@ -109,7 +138,9 @@ function HeartModel() {
       pump -= amp * 0.4 * Math.sin(dubPhase * Math.PI);
     }
 
-    groupRef.current.scale.setScalar(baseScaleRef.current * pump);
+    if (entranceRef.current >= 1) {
+      groupRef.current.scale.setScalar(baseScaleRef.current * pump);
+    }
   });
 
   return <group ref={groupRef} />;

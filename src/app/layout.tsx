@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono, Nunito_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import type { ReactNode } from "react";
 
 const geistSans = Geist({
@@ -27,7 +28,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${logoFont.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
